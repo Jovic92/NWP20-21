@@ -8,6 +8,7 @@
 .product-item .details{
     text-align: center;
 }
+
 .product-item.sale{
     background-color: chartreuse;
 }
