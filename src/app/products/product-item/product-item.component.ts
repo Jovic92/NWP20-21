@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/product';
 
 @Component({
   selector: 'app-product-item',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductItemComponent implements OnInit {
 
-  constructor() { }
+  public product: Product;
+
+  constructor() {}
 
   ngOnInit(): void {
+    this.product = {
+      name: "Monitor Dell",
+      price: 25000,
+      isOnSale: true,
+      quantity:0,
+      imageUrl:"https://img.gigatron.rs/img/products/large/image5b854e7ad91cf.png"
+    }
   }
 
 }
